@@ -12,7 +12,7 @@
 
     .navbar-brand{
         
-        background: url(/images/LogoAdoptMe.svg);
+        background: url(./images/LogoAdoptMe.svg);
         height: 70px; /* Cambia a 100% para que ocupe toda la altura del contenedor */
         width: 200px;
         background-position: center; /* Centra el logo en el medio del ancho */
@@ -32,7 +32,7 @@
     }
 
     .imgtit-donaciones {
-        background-image: url(/images/tienda/donaciones.png);
+        background-image: url(./images/tienda/donaciones.png);
         background-size: cover; 
         background-position: center;
         color: white; 
@@ -204,7 +204,7 @@ body {
     }
 
     .imgtit-donaciones {
-        background-image: url(/images/tienda/donaciones.png);
+        background-image: url(./images/tienda/donaciones.png);
         background-size: cover; 
         background-position: center;
         color: white; 
@@ -214,7 +214,7 @@ body {
     
     .navbar-brand{
         
-    background: url(/images/LogoAdoptMe.svg);
+    background: url(./images/LogoAdoptMe.svg);
     height: 70px; /* Cambia a 100% para que ocupe toda la altura del contenedor */
     width: 200px;
     background-position: center; /* Centra el logo en el medio del ancho */
