@@ -19,7 +19,7 @@ fetch('footer.html')
 });
 
 // Get all navbar links
-const navLinks = document.querySelectorAll('navbar');
+const navLinks = document.querySelectorAll('.navbar a');
 
 // Add click event listener to each link
 navLinks.forEach(link => {
