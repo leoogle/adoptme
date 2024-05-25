@@ -20,7 +20,7 @@ fetch('footer.html')
 
 function setupEventListeners() {
     const navLinks = document.querySelectorAll('.nav-link');
-    const carouselItems = document.querySelectorAll('.carousel-item');
+    const carouselItems = document.querySelectorAll('.carousel-href');
     function loadContent(url) {
         fetch(url)
             .then(response => response.text())
@@ -42,7 +42,7 @@ function setupEventListeners() {
     carouselItems.forEach(item => {
         item.addEventListener('click', function(event) {
             event.preventDefault();
-            const carouselId = item.closest('.carousel').id;
+            const carouselId = item.closest('.carousel-href').id;
             const carouselIndex = Array.from(item.parentNode.children).indexOf(item);
             handleCarouselClick(carouselId, carouselIndex);
         });
