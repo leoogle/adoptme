@@ -20,7 +20,7 @@ fetch('footer.html')
 
 function setupEventListeners() {
     const navLinks = document.querySelectorAll('.nav-link');
-    const carouselItems = document.querySelectorAll('.carousel-href');
+    const carouselLinks = document.querySelectorAll('.carousel-href');
     function loadContent(url) {
         fetch(url)
             .then(response => response.text())
@@ -39,22 +39,14 @@ function setupEventListeners() {
         });
     });
 
-    carouselItems.forEach(item => {
-        item.addEventListener('click', function(event) {
+    carouselLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
             event.preventDefault();
-            const carouselId = item.closest('.carousel-href').id;
-            const carouselIndex = Array.from(item.parentNode.children).indexOf(item);
-            handleCarouselClick(carouselId, carouselIndex);
+            const url = link.getAttribute('href');
+            loadContent(url);
         });
     });
-}
-
-
-
-function handleCarouselClick(carouselId, carouselIndex) {
-    const carousel = document.getElementById(carouselId);
-    const carouselInstance = bootstrap.Carousel.getInstance(carousel);
-    carouselInstance.to(carouselIndex);
+    
 }
 
 document.addEventListener('DOMContentLoaded', function() {
