@@ -30,15 +30,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 });
 
-function setupNavLinks() {
-    const links = document.querySelectorAll('.nav-link');
-    links.forEach(link => {
-        link.addEventListener('click', function(event) {
-            event.preventDefault();
-            loadContent(link.getAttribute('href'));
-        });
-    });
-}
 
 function loadContent(url) {
     fetch(url)
@@ -46,4 +37,19 @@ function loadContent(url) {
         .then(data => {
             document.getElementById('content-container').innerHTML = data;
         });
+}
+
+function setupNavLinks() {
+    const links = document.querySelectorAll('.nav-link');
+    links.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const url = link.getAttribute('href');
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('content-container').innerHTML = data;
+                });
+        });
+    });
 }
