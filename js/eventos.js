@@ -21,6 +21,15 @@ fetch('footer.html')
 function setupEventListeners() {
     const navLinks = document.querySelectorAll('.nav-link');
     const carouselItems = document.querySelectorAll('.carousel-item');
+    function loadContent(url) {
+        fetch(url)
+            .then(response => response.text())
+            .then(data => {
+                const contentContainer = document.getElementById('content-container');
+                contentContainer.innerHTML = data;
+            });
+    
+    }
 
     navLinks.forEach(link => {
         link.addEventListener('click', function(event) {
@@ -40,15 +49,7 @@ function setupEventListeners() {
     });
 }
 
-function loadContent(url) {
-    fetch(url)
-        .then(response => response.text())
-        .then(data => {
-            const contentContainer = document.getElementById('content-container');
-            contentContainer.innerHTML = data;
-        });
 
-}
 
 function handleCarouselClick(carouselId, carouselIndex) {
     const carousel = document.getElementById(carouselId);
