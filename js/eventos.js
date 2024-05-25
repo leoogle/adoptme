@@ -18,53 +18,52 @@ fetch('footer.html')
     });
 });
 
+function setupEventListeners() {
+    const navLinks = document.querySelectorAll('.nav-link');
+    const carouselItems = document.querySelectorAll('.carousel-item');
 
-
-document.addEventListener("DOMContentLoaded", function() {
-    fetch('navbar.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('navbar').innerHTML = data;
-            setupNavLinks();
-            loadContent('main.html');  // Carga el contenido inicial
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const url = link.getAttribute('href');
+            loadContent(url);
         });
-});
+    });
 
+    carouselItems.forEach(item => {
+        item.addEventListener('click', function(event) {
+            event.preventDefault();
+            const carouselId = item.closest('.carousel').id;
+            const carouselIndex = Array.from(item.parentNode.children).indexOf(item);
+            handleCarouselClick(carouselId, carouselIndex);
+        });
+    });
+}
 
 function loadContent(url) {
     fetch(url)
         .then(response => response.text())
         .then(data => {
-            document.getElementById('content-container').innerHTML = data;
+            const contentContainer = document.getElementById('content-container');
+            contentContainer.innerHTML = data;
         });
+
 }
 
-function setupNavLinks() {
-    const links = document.querySelectorAll('.nav-link');
-    links.forEach(link => {
-        link.addEventListener('click', function(event) {
-            event.preventDefault();
-            const url = link.getAttribute('href');
-            fetch(url)
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('content-container').innerHTML = data;
-                });
-        });
-    });
+function handleCarouselClick(carouselId, carouselIndex) {
+    const carousel = document.getElementById(carouselId);
+    const carouselInstance = bootstrap.Carousel.getInstance(carousel);
+    carouselInstance.to(carouselIndex);
 }
 
-function setupCarouselLinks() {
-    const links = document.querySelectorAll('.carousel-item');
-    links.forEach(link => {
-        link.addEventListener('click', function(event) {
-            event.preventDefault();
-            const url = link.getAttribute('href');
-            fetch(url)
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('content-container').innerHTML = data;
-                });
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+            setupEventListeners();
+            loadContent('main.html');
         });
-    });
-}
+});
+
+
