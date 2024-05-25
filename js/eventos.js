@@ -39,7 +39,7 @@ function loadContent(url) {
         });
 }
 
-function setupNavLinksNavbar() {
+function setupNavLinks() {
     const links = document.querySelectorAll('.nav-link');
     links.forEach(link => {
         link.addEventListener('click', function(event) {
@@ -54,7 +54,7 @@ function setupNavLinksNavbar() {
     });
 }
 
-function setupNavLinksCarousel() {
+function setupCarouselLinks() {
     const links = document.querySelectorAll('.carousel-item');
     links.forEach(link => {
         link.addEventListener('click', function(event) {
