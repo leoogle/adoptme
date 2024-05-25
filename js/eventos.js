@@ -39,8 +39,23 @@ function loadContent(url) {
         });
 }
 
-function setupNavLinks() {
+function setupNavLinksNavbar() {
     const links = document.querySelectorAll('.nav-link');
+    links.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const url = link.getAttribute('href');
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('content-container').innerHTML = data;
+                });
+        });
+    });
+}
+
+function setupNavLinksCarousel() {
+    const links = document.querySelectorAll('.carousel-item');
     links.forEach(link => {
         link.addEventListener('click', function(event) {
             event.preventDefault();
