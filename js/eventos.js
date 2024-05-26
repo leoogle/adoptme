@@ -15,16 +15,16 @@ function setupEventListeners() {
     navLinks.forEach(link => {
         link.addEventListener('click', function(event) {
             event.preventDefault();
-            const url = link.getAttribute('href');
-            loadContent(url);
+            const urlNav = link.getAttribute('href');
+            loadContent(urlNav);
         });
     });
 
     carouselLinks.forEach(link => {
         link.addEventListener('click', function(event) {
             event.preventDefault();
-            const url = link.getAttribute('href');
-            loadContent(url);
+            const urlCarou = link.getAttribute('href');
+            loadContent(urlCarou);
         });
     });
     
