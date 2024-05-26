@@ -5,8 +5,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
         .then(data => {
             document.getElementById('navbar').innerHTML = data;
             // Llama a setupEventListeners después de cargar el navbar
-            loadContent('main.html');
             setupEventListeners();
+            loadContent('main.html');
         });
 
     // Carga el footer
