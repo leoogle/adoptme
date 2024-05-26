@@ -214,7 +214,7 @@ body {
     
     .navbar-brand{
         
-    background: url(images/LogoAdoptMe.svg);
+    background: url(https://raw.githubusercontent.com/leoogle/adoptme/2808c3ab40dc370067baf0ceb2789402545da165/images/LogoAdoptMe.svg);
     height: 70px; /* Cambia a 100% para que ocupe toda la altura del contenedor */
     width: 200px;
     background-position: center; /* Centra el logo en el medio del ancho */
