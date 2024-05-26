@@ -1,0 +1,22 @@
+{
+    "fundaciones": [
+        {
+			"idFundacion": "F01",
+            "strNomFundacion": "Fundación Patitas",
+            "strImg": ".\images\tienda\fundacion1.jpg",
+			"strDescripcion": "Organización dedicada al rescate de perros callejeros, tiene más de 10 años realizando esta hermosa labor. Además, sustentan el mantenimiento de los perros solo de las donaciones recibidas de particulares."					            
+        },
+		{
+			"idFundacion": "F02",
+            "strNomFundacion": "Fundación Un Hogar Para Un Gato",
+            "strImg": ".\images\tienda\fundacion3.jpg",
+			"strDescripcion": "Organización dedicada al rescate de Gatitos abandonados a su suerte, además, se dedican a buscar un hogar adecuado para estos Gatos. Está presente desde el 2009 y cuenta con más de 1000 gatitos rescatados a los que se les ha entregado un nuevo hogar."					            
+        },
+		{
+			"idFundacion": "F03",
+            "strNomFundacion": "Clinica Veterinaria Maitenes",
+            "strImg": ".\images\tienda\fundacion5.jpg",
+			"strDescripcion": "Clinica Veterinaria ubicada en la comuna de Quinta Normal que entrega servicios gratuitos para dueños de mascotas con bajos ingresos, su principal preocupación es la salud de las mascotas. Se solventan gracias a las donaciones de sus pacientes."					            
+        }		
+	]
+}

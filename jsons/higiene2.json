@@ -1,0 +1,62 @@
+{
+    "Higiene2": [
+        {
+			"idProducto": "H09",
+            "strNomproducto": "Desparasitante para Gatos",
+            "strImg": ".\images\tienda\desparasitante1.jpg",
+			"strDescripcion": "Antiparasitario interno y externo 2 en 1 para gatos de 2,5 Kg a 7,5 Kg",
+			"strPrecio": "$6.990"
+			            
+        },
+		{
+			"idProducto": "H10",
+            "strNomproducto": "Desparasitante para Perros",
+            "strImg": ".\images\tienda\desparasitante2.jpg",
+			"strDescripcion": "Antiparasitario oral masticable para perros de 5 a 10 KG.",
+			"strPrecio": "$9.990"			
+        },
+		{
+			"idProducto": "H11",
+            "strNomproducto": "Desparasitante y Antipulgas",
+            "strImg": ".\images\tienda\desparasitante3.jpg",
+			"strDescripcion": "Comprimido masticable contra pulgas y garrapatas en perro.",
+			"strPrecio": "$11.990"			
+        },
+		{
+			"idProducto": "H12",
+            "strNomproducto": "Arenero para Gatos",
+            "strImg": ".\images\tienda\arenero2.jfif",
+			"strDescripcion": "Bandeja sanitaria con borde blanco para gatos.",
+			"strPrecio": "$19.990"				
+        },
+		{
+			"idProducto": "H13",
+            "strNomproducto": "Arena para Gatos",
+            "strImg": ".\images\tienda\arena1.jpg",
+			"strDescripcion": "Arena para gatos de bentonita con un fresco olor a talco.",
+			"strPrecio": "$9.990"			
+        },
+		{
+			"idProducto": "H14",
+            "strNomproducto": "Spray Relajante para Gatos",
+            "strImg": ".\images\tienda\spray1.jpg",
+			"strDescripcion": "Spray Relajante solo para Gatos.",
+			"strPrecio": "$9.990"
+        },
+		{
+			"idProducto": "H15",
+            "strNomproducto": "Suplemento Alimenticio para Perros",
+            "strImg": ".\images\tienda\suplemento1.jpg",
+			"strDescripcion": "Fórmula que ayuda a regenerar y fortalecer las articulaciones y ligamentos de perros y gatos.",
+			"strPrecio": "$26.990"
+        },
+		{
+			"idProducto": "H16",
+            "strNomproducto": "Snack de Filete de Atún",
+            "strImg": ".\images\tienda\snack1.jpg",
+			"strDescripcion": "Delicioso snack de filete de atún, dar a tu gato como premio",
+			"strPrecio": "$14.990"
+        }
+		
+	]
+}

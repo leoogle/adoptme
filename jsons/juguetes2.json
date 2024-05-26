@@ -1,0 +1,66 @@
+{
+    "juguetes2": [
+        {
+			"idProducto": "J09",
+            "strNomproducto": "Varita con Plumas para Gato",
+            "strImg": ".\images\tienda\varita1.jpg",
+			"strDescripcion": "Esta entretenida varita hará que tus juegos con tu Gato o Gata sean mucho más entretenidos. Solo debes mover la varita y de esta forma se agitaran las plumas en la punta para que tu Gato busque atraparlas.",
+			"strPrecio": "$4.990"
+			            
+        },
+		{
+			"idProducto": "J10",
+            "strNomproducto": "Varita con Ratón para Gato",
+            "strImg": ".\images\tienda\varita2.jpg",
+			"strDescripcion": "Esta entretenida varita hará que tus juegos con tu Gato o Gata sean mucho más entretenidos. Solo debes mover la varita y de esta forma el ratón se agitará llamando la atención de tu gato, lo que hará que salte y corra por atraparlo.",
+			"strPrecio": "$5.990"
+        },
+		{
+			"idProducto": "J11",
+            "strNomproducto": "Collar Para Gato",
+            "strImg": ".\images\tienda\collargato1.jfif",
+			"strDescripcion": "Con este estetico collar haz que tu gato se vea único, además, puedes escucharlo por donde anda debido a su cascabel incorporado. Este collar está hecho de un material elastico que permite estirarse cuando tu gato se enganche en algo. Selecciona la talla según el tamaño de tu Gato.",
+			"strPrecio": "$6.990"
+        },
+		{
+			"idProducto": "J12",
+            "strNomproducto": "Collar Para Gata",
+            "strImg": ".\images\tienda\collargato2.jpg",
+			"strDescripcion": "Con este estetico collar haz que tu gata se vea único, además, puedes escucharlo por donde anda debido a su cascabel incorporado. Este collar está hecho de un material elastico que permite estirarse cuando tu gata se enganche en algo. Selecciona la talla según el tamaño de tu Gata.",
+			"strPrecio": "$6.990"
+        },
+		{
+			"idProducto": "J13",
+            "strNomproducto": "Ratón de Juguete",
+            "strImg": ".\images\tienda\raton1.jpg",
+			"strDescripcion": "Este entretenido ratón de juguete para tu Gato hará que tu gato dedique mucha energia atrapandolo, si quieres jugar con el, solo debes tirarlo dentro de un espacio abierto.",
+			"strPrecio": "$2.990"
+        },
+		{
+			"idProducto": "J14",
+            "strNomproducto": "Rascador de Gato",
+            "strImg": ".\images\tienda\rascador4.jpg",
+			"strDescripcion": "El Rascador para Gato tipo Cactus es un excelente elemento decorativo para tu casa,  tu incondicional lo adorará.
+                        Material: Cuerda de yute, tela suave, base solida de madera.
+                        Medidas: 39cm la base – altura 82 – grosor de 10cm.
+                        Color:  Beige",
+			"strPrecio": "$16.990"
+						
+        },
+		{
+			"idProducto": "J15",
+            "strNomproducto": "Bandana Para Gato",
+            "strImg": ".\images\tienda\collarbanda1.jfif",
+			"strDescripcion": "Esta hermosa bandana hará que tu Gato se vea genial!",
+			"strPrecio": "$7.990"
+        },
+		{
+			"idProducto": "J16",
+            "strNomproducto": "Pelota Rascadora Para Gato",
+            "strImg": ".\images\tienda\pelota1.jpg",
+			"strDescripcion": "Con esta entretenida pelota tu gato podrá jugar sin limites, puedes acompañarlo lanzandola para que la busque o tu gato puede jugar solo. Además, su material permite que tu gato rasque sus garras en ella!".
+			"strPrecio": "$4.990"
+        }
+		
+	]
+}
