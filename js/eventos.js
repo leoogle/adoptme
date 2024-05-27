@@ -20,25 +20,25 @@ function setupEventListeners() {
         });
     });
 
-  
+    setTimeout(() => {
+        const carouselLinks = document.querySelectorAll('.carousel-link');
+        
+    
+        carouselLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                const url = link.getAttribute('href');
+                console.log('Carousel link clicked:', url);
+                loadContent(url);
+            });
+        });
+    }, 1000); 
     
 }
 
 
 
-setTimeout(() => {
-    const carouselLinks = document.querySelectorAll('.carousel-item .nav-link');
-    
 
-    carouselLinks.forEach(link => {
-        link.addEventListener('click', function(event) {
-            event.preventDefault();
-            const url = link.getAttribute('href');
-            console.log('Carousel link clicked:', url);
-            loadContent(url);
-        });
-    });
-}, 1000); 
 
 window.addEventListener('DOMContentLoaded', (event) => {
     // Carga el navbar
