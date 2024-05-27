@@ -16,7 +16,7 @@ function setupEventListeners() {
         link.addEventListener('click', function(event) {
             event.preventDefault();
             const urlNav = link.getAttribute('href');
-            console.log('Nav link clicked:', url); 
+            console.log('Nav link clicked:', urlNav); 
             loadContent(urlNav);
         });
     });
