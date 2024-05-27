@@ -8,7 +8,7 @@ function loadContent(url) {
 }
 function setupEventListeners() {
     const navLinks = document.querySelectorAll('.nav-link');
-    const carouselLinks = document.querySelectorAll('a.carousel-href');
+    const carouselLinks = document.querySelectorAll('carousel-href');
 
 
 
@@ -23,7 +23,7 @@ function setupEventListeners() {
     carouselLinks.forEach(link => {
         link.addEventListener('click', function(event) {
             event.preventDefault();
-            const urlCarou = link.getAttribute('href');
+            const urlCarou = link.getAttribute('data-href');
             loadContent(urlCarou);
         });
     });
