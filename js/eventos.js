@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Agregar event listener al botón de "Donar"
     btnDonar.addEventListener('click', function(event) {
-        // Llamar a la función de validación y prevenir la acción predeterminada del botón
+            validarDonacion() 
         if (!validarDonacion()) {
             event.preventDefault();
         }
