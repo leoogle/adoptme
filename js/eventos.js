@@ -8,8 +8,7 @@ function loadContent(url) {
 }
 function setupEventListeners() {
     const navLinks = document.querySelectorAll('.nav-link');
-    const carouselLinks = document.querySelectorAll('carousel-href');
-    console.log('Setting up event listeners for nav-links:', navLinks);
+
 
 
     navLinks.forEach(link => {
@@ -21,13 +20,7 @@ function setupEventListeners() {
         });
     });
 
-    carouselLinks.forEach(link => {
-        link.addEventListener('click', function(event) {
-            event.preventDefault();
-            const urlCarou = link.getAttribute('data-href');
-            loadContent(urlCarou);
-        });
-    });
+  
     
 }
 
@@ -36,7 +29,6 @@ function setupEventListeners() {
 setTimeout(() => {
     const carouselLinks = document.querySelectorAll('.carousel-item .nav-link');
     
-    console.log('Setting up event listeners for carousel links:', carouselLinks); // Debug logging
 
     carouselLinks.forEach(link => {
         link.addEventListener('click', function(event) {
@@ -46,15 +38,14 @@ setTimeout(() => {
             loadContent(url);
         });
     });
-}, 1000); // Adjust delay time as needed
+}, 1000); 
 
 window.addEventListener('DOMContentLoaded', (event) => {
     // Carga el navbar
     fetch('navbar.html')
         .then(response => response.text())
         .then(data => {
-            document.getElementById('navbar').innerHTML = data;
-            // Llama a setupEventListeners después de cargar el navbar
+            document.getElementById('navbar').innerHTML = data
             setupEventListeners();
             loadContent('main.html');
         });
