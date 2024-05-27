@@ -7,6 +7,7 @@ function loadContent(url) {
         });
 }
 function setupEventListeners() {
+    setTimeout(() => {
     const navLinks = document.querySelectorAll('.nav-link');
     console.log('NavLinks:', navLinks);
 
@@ -21,7 +22,7 @@ function setupEventListeners() {
         });
     });
 
-    setTimeout(() => {
+    
         const carouselLinks = document.querySelectorAll('.carousel-link');
         console.log('CarouselLinks:', carouselLinks);
         
