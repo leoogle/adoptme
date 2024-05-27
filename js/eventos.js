@@ -9,13 +9,14 @@ function loadContent(url) {
 function setupEventListeners() {
     const navLinks = document.querySelectorAll('.nav-link');
     const carouselLinks = document.querySelectorAll('carousel-href');
-
+    console.log('Setting up event listeners for nav-links:', navLinks);
 
 
     navLinks.forEach(link => {
         link.addEventListener('click', function(event) {
             event.preventDefault();
             const urlNav = link.getAttribute('href');
+            console.log('Nav link clicked:', url); 
             loadContent(urlNav);
         });
     });
