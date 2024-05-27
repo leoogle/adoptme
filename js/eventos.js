@@ -25,7 +25,7 @@ function setupEventListeners() {
 }
 
 
-// Delay setting up event listeners for carousel links after loading carousel content
+
 setTimeout(() => {
     const carouselLinks = document.querySelectorAll('.carousel-item .nav-link');
     
@@ -34,7 +34,7 @@ setTimeout(() => {
         link.addEventListener('click', function(event) {
             event.preventDefault();
             const url = link.getAttribute('href');
-            console.log('Carousel link clicked:', url); // Debug logging
+            console.log('Carousel link clicked:', url);
             loadContent(url);
         });
     });
