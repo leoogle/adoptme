@@ -65,13 +65,15 @@ document.addEventListener('DOMContentLoaded', function() {
     // Seleccionar el botón de "Donar" por su clase
     var btnDonar = document.querySelector('.btn-donar');
 
-    // Agregar event listener al botón de "Donar"
-    btnDonar.addEventListener('click', function(event) {
+    // Agregar event listener al botón de "Donar" solo si existe
+    if (btnDonar) {
+        btnDonar.addEventListener('click', function(event) {
             validarDonacion() 
-        if (!validarDonacion()) {
-            event.preventDefault();
-        }
-    });
+            if (!validarDonacion()) {
+                event.preventDefault();
+            }
+        });
+    }
 });
 
 // Función de validación de donación
@@ -149,22 +151,23 @@ function mostrarMensajesAdvertencia() {
     });
 }
 
-// Agregar event listener para mostrar los mensajes de advertencia cuando el formulario se envía
 document.addEventListener('DOMContentLoaded', function() {
     // Seleccionar el formulario
     var formulario = document.querySelector('form');
 
-    // Agregar event listener para el evento submit del formulario
-    formulario.addEventListener('submit', function(event) {
-        // Mostrar los mensajes de advertencia
-        mostrarMensajesAdvertencia();
-        
-        // Verificar si hay campos vacíos
-        var camposVacios = document.querySelectorAll('input[required], select[required], textarea[required]:not(:valid)');
-        if (camposVacios.length > 0) {
-            // Evitar que el formulario se envíe si hay campos vacíos
-            event.preventDefault();
-        }
-    });
+    // Agregar event listener para el evento submit del formulario solo si existe
+    if (formulario) {
+        formulario.addEventListener('submit', function(event) {
+            // Mostrar los mensajes de advertencia
+            mostrarMensajesAdvertencia();
+            
+            // Verificar si hay campos vacíos
+            var camposVacios = document.querySelectorAll('input[required], select[required], textarea[required]:not(:valid)');
+            if (camposVacios.length > 0) {
+                // Evitar que el formulario se envíe si hay campos vacíos
+                event.preventDefault();
+            }
+        });
+    }
 });
 
