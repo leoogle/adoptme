@@ -8,7 +8,7 @@ function loadContent(url) {
 }
 function setupEventListeners() {
     const navLinks = document.querySelectorAll('.nav-link');
-    const carouselLinks = document.querySelectorAll('.carousel-href');
+    const carouselLinks = document.querySelectorAll('a.carousel-href');
 
 
 
