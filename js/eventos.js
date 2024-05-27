@@ -31,6 +31,20 @@ function setupEventListeners() {
     
 }
 
+
+const carouselLinks = document.querySelectorAll('.carousel-item .nav-link');
+    
+    console.log('Setting up event listeners for carousel links:', carouselLinks); // Debug logging
+
+    carouselLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const url = link.getAttribute('href');
+            console.log('Carousel link clicked:', url); // Debug logging
+            loadContent(url);
+        });
+    });
+
 window.addEventListener('DOMContentLoaded', (event) => {
     // Carga el navbar
     fetch('navbar.html')
