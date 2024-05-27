@@ -32,7 +32,9 @@ function setupEventListeners() {
 }
 
 
-const carouselLinks = document.querySelectorAll('.carousel-item .nav-link');
+// Delay setting up event listeners for carousel links after loading carousel content
+setTimeout(() => {
+    const carouselLinks = document.querySelectorAll('.carousel-item .nav-link');
     
     console.log('Setting up event listeners for carousel links:', carouselLinks); // Debug logging
 
@@ -44,6 +46,7 @@ const carouselLinks = document.querySelectorAll('.carousel-item .nav-link');
             loadContent(url);
         });
     });
+}, 1000); // Adjust delay time as needed
 
 window.addEventListener('DOMContentLoaded', (event) => {
     // Carga el navbar
