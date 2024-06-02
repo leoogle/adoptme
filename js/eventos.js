@@ -61,7 +61,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         });
 });
 
-document.getElementById('donationForm').addEventListener('submit', function(event) {
+document.getElementById('.donationForm').addEventListener('submit', function(event) {
     // Validar formulario
     if (!this.checkValidity()) {
         event.preventDefault();
