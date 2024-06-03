@@ -204,7 +204,7 @@ document.body.addEventListener("DOMContentLoaded", function() {
     const form = document.getElementById("contactForm");
     const fundacionSelect = document.getElementById("fundacion");
 
-    fetch("/jsons/fundaciones.json")
+    fetch("https://raw.githubusercontent.com/leoogle/adoptme/main/jsons/fundaciones.json")
         .then(response => response.json())
         .then(data => {
             data.fundacion.forEach(fundacion => {
