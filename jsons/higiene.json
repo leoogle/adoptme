@@ -1,0 +1,120 @@
+{
+    "Higiene": [
+        {
+			"idProducto": "H01",
+            "strNomproducto": "Cepillo para Perros y Gatos",
+            "strImg": "./images/tienda/cepillo2.jpg",
+			"strDescripcion": "Este ergonómico cepillo incluye cerdas finas para cepillar a tu mascota, desenredar los nudos, de manera que tu mascota quedará con un pelo brillante y voluminoso.",
+			"strPrecio": "$6.990"
+			            
+        },
+		{
+			"idProducto": "H02",
+            "strNomproducto": "Guantes Para Cepillar",
+            "strImg": "./images/tienda/cepillo3.jpg",
+			"strDescripcion": "Peina y masajea a tu mascota.",
+			"strPrecio": "$8.990"			
+        },
+		{
+			"idProducto": "H03",
+            "strNomproducto": "Shampoo Para Perros",
+            "strImg": "./images/tienda/shampoo1.jpg",
+			"strDescripcion": "Moje a su mascota con agua tibia y vierta suficiente cantidad de Shampoo hipoalergénico sobre el pelaje mojado. Forme abundante espuma masajeando suavemente. Lave con abundante agua.",
+			"strPrecio": "$9.990"
+        },
+		{
+			"idProducto": "H04",
+            "strNomproducto": "Shampoo Para Gatos",
+            "strImg": "./images/tienda/shampoo2.jpg",
+			"strDescripcion": "Shampoo para gatos con aroma a bamboo.",
+			"strPrecio": "$19.990"
+        },
+		{
+			"idProducto": "H05",
+            "strNomproducto": "Shampoo Antipulgas",
+            "strImg": "./images/tienda/shampoo23.jpg",
+			"strDescripcion": "Shampoo para eliminar pulgas, garrapatas y piojos en perros. Moje al animal con abundante agua, y aplique una cantidad suficiente de shampoo desde la cabeza a la cola directamente sobre la piel y pelaje.",
+			"strPrecio": "$12.990"
+        },
+		{
+			"idProducto": "H06",
+            "strNomproducto": "Collar Antipulgas",
+            "strImg": "./images/tienda/collar5.jpg",
+			"strDescripcion": "Mantén a tus peludos libres de pulgas, larvas, garrapatas, piojos, hasta 7 u 8 meses, gracias a Seresto.Elimina las garrapatas, pulgas y piojos,Repele las garrapatas (anti alimentación).",
+			"strPrecio": "$14.990"
+        },
+		{
+			"idProducto": "H07",
+            "strNomproducto": "Jaula Transportadora para Mascotas",
+            "strImg": "./images/tienda/canil1.jpg",
+			"strDescripcion": "La Jaula de Transporte es la forma fácil y segura de transportar a su pequeña mascota. Porque cuando ella te acompaña, todo es mejor. Puerta metálica. Ausencia de ganchos laterales. Acoplamiento por sistema de deslizamiento patentado.",
+			"strPrecio": "$29.990"	
+        },
+		{
+			"idProducto": "H08",
+            "strNomproducto": "Bolso Transportador",
+            "strImg": "./images/tienda/bolso1.jpg",
+			"strDescripcion": "Cómodo y elegante transportín que puede utilizarse como bolso de mano o bandolera con correas acolchadas ajustables para una sensación de comodidad. Conveniente para llevar a sus gatos, cachorros, conejos y animales pequeños al veterinario o de viaje.",
+			"strPrecio": "$19.990"
+        }
+
+	    {
+			"idProducto": "H09",
+            "strNomproducto": "Desparasitante para Gatos",
+            "strImg": "./images/tienda/desparasitante1.jpg",
+			"strDescripcion": "Antiparasitario interno y externo 2 en 1 para gatos de 2,5 Kg a 7,5 Kg",
+			"strPrecio": "$6.990"
+			            
+        },
+		{
+			"idProducto": "H10",
+            "strNomproducto": "Desparasitante para Perros",
+            "strImg": "./images/tienda/desparasitante2.jpg",
+			"strDescripcion": "Antiparasitario oral masticable para perros de 5 a 10 KG.",
+			"strPrecio": "$9.990"			
+        },
+		{
+			"idProducto": "H11",
+            "strNomproducto": "Desparasitante y Antipulgas",
+            "strImg": "./images/tienda/desparasitante3.jpg",
+			"strDescripcion": "Comprimido masticable contra pulgas y garrapatas en perro.",
+			"strPrecio": "$11.990"			
+        },
+		{
+			"idProducto": "H12",
+            "strNomproducto": "Arenero para Gatos",
+            "strImg": "./images/tienda/arenero2.jfif",
+			"strDescripcion": "Bandeja sanitaria con borde blanco para gatos.",
+			"strPrecio": "$19.990"				
+        },
+		{
+			"idProducto": "H13",
+            "strNomproducto": "Arena para Gatos",
+            "strImg": "./images/tienda/arena1.jpg",
+			"strDescripcion": "Arena para gatos de bentonita con un fresco olor a talco.",
+			"strPrecio": "$9.990"			
+        },
+		{
+			"idProducto": "H14",
+            "strNomproducto": "Spray Relajante para Gatos",
+            "strImg": "./images/tienda/spray1.jpg",
+			"strDescripcion": "Spray Relajante solo para Gatos.",
+			"strPrecio": "$9.990"
+        },
+		{
+			"idProducto": "H15",
+            "strNomproducto": "Suplemento Alimenticio para Perros",
+            "strImg": "./images/tienda/suplemento1.jpg",
+			"strDescripcion": "Fórmula que ayuda a regenerar y fortalecer las articulaciones y ligamentos de perros y gatos.",
+			"strPrecio": "$26.990"
+        },
+		{
+			"idProducto": "H16",
+            "strNomproducto": "Snack de Filete de Atún",
+            "strImg": "./images/tienda/snack1.jpg",
+			"strDescripcion": "Delicioso snack de filete de atún, dar a tu gato como premio",
+			"strPrecio": "$14.990"
+        }
+		
+	]
+}

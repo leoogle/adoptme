@@ -32,7 +32,7 @@
     }
 
     .imgtit-donaciones {
-        background-image: url(https://github.com/leoogle/adoptme/blob/06eb30cb601865640227cfc93ab45176d5530e97/images/tienda/Donaciones.png);
+        background-image: url(./images/tienda/donaciones.png);
         background-size: cover; 
         background-position: center;
         color: white; 
@@ -204,7 +204,7 @@ body {
     }
 
     .imgtit-donaciones {
-        background-image: url(https://github.com/leoogle/adoptme/blob/06eb30cb601865640227cfc93ab45176d5530e97/images/tienda/Donaciones.png);
+        background-image: url(./images/tienda/donaciones.png);
         background-size: cover; 
         background-position: center;
         color: white; 
