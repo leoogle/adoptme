@@ -94,7 +94,7 @@ function leerProductos(letraInicial){
     console.log('Letra recibida:', letraInicial);
     let res = document.querySelector('#res');
     res.innerHTML = '';
-    fetch('/jsons/data.json')
+    fetch('https://raw.githubusercontent.com/leoogle/adoptme/main/jsons/data.json')
     .then(respuesta => respuesta.json())
     .then(productos => {
         console.log(productos.productos)
