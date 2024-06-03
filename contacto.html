@@ -2,86 +2,30 @@
 <h2 class="imgtit-donaciones text-center mb-4">Contacto</h2>
 <hr>
             <div>        
-            <form class="container">
-            <div class="form-group row col-md-6 offset-md-3">
-              <label for="nombres" class="col-4 col-form-label">Nombres</label> 
-              <div class="col-8">
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <div class="input-group-text">
-                      <i class="fa fa-text-width"></i>
+              <div class="container">
+                <h2>Formulario de Contacto</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" required>
                     </div>
-                  </div> 
-                  <input id="nombres" name="nombres" placeholder="Nombres" type="text" class="form-control" required="required" aria-describedby="nombresHelpBlock"> 
-                  <div class="input-group-append">
-                    <div class="input-group-text"></div>
-                  </div>
-                </div> 
-                <span id="nombresHelpBlock" class="form-text text-muted">Por favor ingresa ambos nombres</span>
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="Apellidos" class="col-4 col-form-label">Apellidos</label> 
-              <div class="col-8">
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <div class="input-group-text">
-                      <i class="fa fa-text-width"></i>
+                    <div class="form-group">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" class="form-control" id="apellido" required>
                     </div>
-                  </div> 
-                  <input id="Apellidos" name="Apellidos" placeholder="Apellidos" type="text" class="form-control" required="required" aria-describedby="ApellidosHelpBlock"> 
-                  <div class="input-group-append">
-                    <div class="input-group-text"></div>
-                  </div>
-                </div> 
-                <span id="ApellidosHelpBlock" class="form-text text-muted">Por favor ingresa ambos apellidos</span>
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="correo" class="col-4 col-form-label">Correo electrónico</label> 
-              <div class="col-8">
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <div class="input-group-text">
-                      <i class="fa fa-address-book-o"></i>
+                    <div class="form-group">
+                        <label for="correo">Correo Electrónico:</label>
+                        <input type="email" class="form-control" id="correo" required>
                     </div>
-                  </div> 
-                  <input id="correo" name="correo" placeholder="Correo electrónico" type="text" class="form-control" aria-describedby="correoHelpBlock" required="required"> 
-                  <div class="input-group-append">
-                    <div class="input-group-text"></div>
-                  </div>
-                </div> 
-                <span id="correoHelpBlock" class="form-text text-muted">Por favor ingresa tu correo electrónico</span>
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="telefono" class="col-4 col-form-label">Número de telefono</label> 
-              <div class="col-8">
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <div class="input-group-text">
-                      <i class="fa fa-phone-square"></i>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" class="form-control" id="telefono" required>
                     </div>
-                  </div> 
-                  <input id="telefono" name="telefono" placeholder="Número de telefono" type="text" class="form-control" aria-describedby="telefonoHelpBlock" required="required"> 
-                  <div class="input-group-append">
-                    <div class="input-group-text"></div>
-                  </div>
-                </div> 
-                <span id="telefonoHelpBlock" class="form-text text-muted">Por favor ingresa tu número de telefono</span>
-              </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
             </div>
-            <div class="form-group row">
-              <label for="mensaje" class="col-4 col-form-label">Mensaje</label> 
-              <div class="col-8">
-                <textarea id="mensaje" name="mensaje" cols="40" rows="5" class="form-control" aria-describedby="mensajeHelpBlock" required="required"></textarea> 
-                <span id="mensajeHelpBlock" class="form-text text-muted">Por favor ingresa el mensaje</span>
-              </div>
-            </div> 
-            <div class="form-group row">
-              <div class="offset-4 col-8">
-                <button name="submit" type="submit" class="btn btn-primary">Submit</button>
-              </div>
-            </div>
-          </form>
 </div>   

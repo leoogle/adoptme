@@ -170,6 +170,77 @@ document.body.addEventListener('click', function(event) {
 });
 
 
+document.body.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("contactForm");
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        if (validateForm()) {
+            
+            alert("Formulario válido. Enviando datos...");
+        }
+    });
+
+    function validateForm() {
+        let isValid = true;
+        const inputs = form.querySelectorAll("input, textarea");
+
+        inputs.forEach(input => {
+            if (!input.checkValidity()) {
+                isValid = false;
+                
+                input.classList.add("is-invalid");
+            } else {
+                
+                input.classList.remove("is-invalid");
+            }
+        });
+
+        return isValid;
+    }
+});
+
+document.body.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("contactForm");
+    const fundacionSelect = document.getElementById("fundacion");
+
+    fetch("/jsons/fundaciones.json")
+        .then(response => response.json())
+        .then(data => {
+            data.fundacion.forEach(fundacion => {
+                const option = document.createElement("option");
+                option.value = fundacion.id;
+                option.textContent = fundacion.nombre;
+                fundacionSelect.appendChild(option);
+            });
+        })
+        .catch(error => console.error("Error al cargar las fundaciones:", error));
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        if (validateForm()) {
+            alert("Formulario válido. Enviando datos...");
+        }
+    });
+
+    function validateForm() {
+        let isValid = true;
+        const inputs = form.querySelectorAll("input, textarea, select");
+
+        inputs.forEach(input => {
+            if (!input.checkValidity()) {
+                isValid = false;
+                input.classList.add("is-invalid");
+            } else {
+                input.classList.remove("is-invalid");
+            }
+        });
+
+        return isValid;
+    }
+});
+
+
 
 
 

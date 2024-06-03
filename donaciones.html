@@ -41,48 +41,40 @@
     <!-- FORMULARIO PARA DONACIONES -->
     
     <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <select class="form-select tmn-drop mb-3" aria-label="Default select example">
-                    <option selected>Selecciona la Fundación Beneficiada</option>
-                    <option value="1">Fundación Patitas</option>
-                    <option value="2">Fundación Un Hogar Para Un Gato</option>
-                    <option value="3">Clinica Veterinaria Maitenes</option>
-                </select>
-                <div class="row mb-3">
-                    <div class="col">
-                        <label for="nombre" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu Nombre" required>
-                    </div>
-                    <div class="col">
-                        <label for="apellido" class="form-label">Apellido</label>
-                        <input type="text" class="form-control" id="apellido" placeholder="Ingresa tu Apellido" required>
-                    </div>
+        <div class="container">
+            <h2>Formulario de Contacto</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" required>
                 </div>
-                <div class="row mb-3">
-                    <div class="col">
-                        <label for="email" class="form-label">Correo Electrónico</label>
-                        <input type="email" class="form-control" id="email" placeholder="nombre@gmail.com" required>
-                    </div>
-                    <div class="col">
-                        <label for="telefono" class="form-label">Teléfono</label>
-                        <input type="text" class="form-control" id="telefono" placeholder="Ingresa tu Nro. de Teléfono" required>
-                    </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" class="form-control" id="apellido" required>
                 </div>
-            </div>
-            <div class="col-md-6">
-                <div class="mb-3">
-                    <label for="mensaje" class="form-label">Deja Un Mensaje para la Fundación</label>
-                    <textarea class="form-control" id="mensaje" rows="7"></textarea>
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" class="form-control" id="correo" required>
                 </div>
-            </div>
-        </div>
-    </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" class="form-control" id="telefono" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="fundacion">Fundación:</label>
+                    <select class="form-control" id="fundacion" required>
+                        
+                    </select>
+                </div>
 
-    <div class="container text-center">
-        <button type="button" class="btn boton-stl1" style="float: right;"> Donar</button>
-    </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
 
     <div style="margin-bottom: 5px;"></div>
 
-    Combinacion de Higuiene 1 y 2
+  
