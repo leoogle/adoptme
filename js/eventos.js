@@ -110,37 +110,18 @@ function leerProductos(letraInicial){
                         <img src="${item.strImg}" class="card-img card-img-top" alt="...">
                             <div class="card-body">
                                 <h7 class="card-text">${item.strNomproducto}</h7>
+                                <p class="tit-modal1"> Descripción </p>
+                                <p class= "descr-modal1">${item.strDescripcion}</p>
                                 <h5 class="card-title" style="color: #FF460B">${item.strPrecio}</h5>
-                <button type="button" class="btn boton-stl1" style="float: right;" data-bs-toggle="modal" data-bs-target="${item.idProducto}">
-                    Ver Más
-                </button>
+                
                             </div>
                     </div>
                 </div>
 
-                <div class="modal fade" id="${item.idProducto}" tabindex="-1" aria-labelledby="${item.idProducto}" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="${item.idProducto}">${item.strNomproducto}|</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                   <p> <img src="${item.strImg}" style="max-width: 54%; height: 60%;" alt=""> </p>
-
-                </div>
-                <p class="tit-modal1"> Descripción </p>
-                <p class= "descr-modal1">${item.strNomproducto}</p>
-
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volver</button>
-                    <button type="button"class="btn boton-stl1">Lo Quiero!</button>
-                </div>
-            </div>
-        </div>
-    </div> 
+                
                 
                 `
+                
 
       
     })
